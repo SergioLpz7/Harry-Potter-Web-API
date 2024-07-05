@@ -16,7 +16,7 @@ Este proyecto utiliza la API de Harry Potter para mostrar información en una p�
 ## Tecnologías Utilizadas
 
 - ![JavaScript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square)
-- ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff&style=flat-square)
+<!-- - ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff&style=flat-square) -->
 - ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff&style=flat-square)
 - ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=fff&style=flat-square)
 - ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=fff&style=flat-square)
