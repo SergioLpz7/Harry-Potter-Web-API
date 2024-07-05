@@ -1,0 +1,326 @@
+@font-face {
+  font-family: Harry Potter;
+  src: url(fuentes/HARRYP__.TTF);
+}
+@font-face {
+  font-family: nombre;
+  src: url(fuentes/MagicSchoolOne.ttf);
+}
+@font-face {
+  font-family: cascadia;
+  src: url(fuentes/CascadiaCodePL.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cascadia;
+}
+body {
+  /* background-color: #422402; */
+  /* background-color: #2CA58D; */
+  /* background-color: #3f4c6b; */
+  background-color: #F1E6B9; 
+}
+header {
+  /* background: #2c3539; */
+  background-color: #031931;
+  color: #c7c7c7;
+  position: relative;
+  /* padding: 2em; */
+  /* color: white; */
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+header h1 a {
+  color: #ada8b6;
+  font-size: 6vw;
+  font-family: nombre;
+  text-align: center;
+  text-decoration: none;
+}
+header p {
+  font-size: 3em;
+}
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  left: -100%;
+  position: absolute;
+  z-index: 10;
+}
+nav.active {
+  left: 0;
+  background-color: #ada8b6;
+  transition: 0.5s;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 2em;
+}
+nav a.active {
+  background-color: black;
+}
+nav a:hover {
+  background-color: #4e4c4c;
+}
+#burger {
+  font-size: 2.5em;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.foto {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 45%;
+  justify-content: space-around;
+  margin: 0.8em 0;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px burlywood;
+}
+.foto:hover {
+  transform: scale(1.1);
+}
+.foto h2 {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  font-size: 4vw;
+  font-family: Harry Potter;
+}
+.foto img {
+  width: 20%;
+  /* height: 20%; */
+  /* object-fit: cover; */
+}
+.datos {
+  display: flex;
+  flex-flow: column wrap;
+  width: 70%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.datos p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.info img {
+  width: 35%;
+  height: 84vh;
+  border-radius: 10px;
+}
+.detalles {
+  border: 2px solid white;
+  width: 50%;
+  border-radius: 10px;
+}
+.info button {
+  top: 0;
+  right: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.detalles p {
+  border: 1px solid white;
+  font-size: 2em;
+  padding: 1em;
+}
+.inicio {
+  text-align: center;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.inicio a {
+  text-decoration: none;
+  color: black;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff80;
+}
+.inicio a:hover img {
+  opacity: 0.3;
+}
+.inicio a h1 {
+  position: absolute;
+  display: none;
+}
+.inicio a:hover h1 {
+  display: block;
+}
+.inicio a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.actores {
+  margin: 1em 0;
+  width: 40%;
+  background-color: #2f4f4f;
+  /* background-color: #DAA520; */
+  /* background-color: #3c2f2f; no */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.actores:hover {
+  transform: scale(1.1);
+}
+.actores img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+}
+.actores h2 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-family: nombre;
+}
+.actores p {
+  display: none;
+  text-align: center;
+}
+.actores:hover p {
+  display: block;
+}
+.detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.cuadrado {
+  margin-top: 1em;
+  color: white;
+  width: 50%;
+  background-color: #2f4f4f;
+  border-radius: 30px;
+}
+.cuadrado button {
+  position: absolute;
+  top: 0.2em;
+  cursor: pointer;
+  right: 4em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.masInfo h1 {
+  font-size: 3em;
+  font-family: nombre;
+  font-weight: bold;
+}
+.masInfo p {
+  font-size: 1.4em;
+  padding: 0.8em 0;
+}
+.cerrar {
+  border: none;
+  background-color: #031931;
+  color: white;
+}
+.cerrar:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 700px) {
+  header h1 a {
+    padding: 1em;
+    font-size: 5vh;
+  }
+  #burger {
+    font-size: 3em;
+  }
+  .foto {
+    width: 80%;
+  }
+  .foto h2 {
+    font-size: 5vh;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  .info img {
+    width: 30%;
+    height: auto;
+  }
+  .detalles {
+    font-size: 1vh;
+  }
+  .detalles p {
+    font-size: 2vh;
+    padding: 2em;
+  }
+  .info button {
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .actores {
+    width: 45%;
+  }
+  .actores img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .inicio {
+    flex-direction: column;
+  }
+
+  .inicio a {
+    width: 90%;
+    margin: 1rem auto;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .inicio a img {
+    height: 500px;
+    max-width: 100%;
+  }
+
+  .inicio a h1 {
+    font-size: 1.5rem;
+    position: relative;
+    display: block;
+  }
+}
